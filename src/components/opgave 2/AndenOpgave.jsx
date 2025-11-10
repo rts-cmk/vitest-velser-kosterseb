@@ -1,3 +1,11 @@
-// Øvelse 2: Strukturér dine tests med `describe`, `beforeEach` og `afterEach`
-// Organisér dine tests i grupper med `describe`. 
-// Brug `beforeEach` til at opsætte testdata og `afterEach` til at rydde op.
+// Simple matematik funktioner
+
+// Lægger to tal sammen
+export function add(a, b) {
+    return a + b;
+    }
+
+    // Trækker to tal fra hinanden
+export function subtract(a, b) {
+    return a - b;
+}
