@@ -28,6 +28,14 @@ describe('Math Functions', () => {
         it('should add a positive and a negative number correctly', () => {
             expect(add(a, -b)).toBe(5);
         });
+
+        it('should add a negative and a positive number correctly', () => {
+            expect(add(-a, b)).toBe(-5);
+        });
+
+        it('should add two negative numbers correctly', () => {
+            expect(add(-a, -b)).toBe(-15);
+        });
     });
 
     describe('subtract function', () => {
