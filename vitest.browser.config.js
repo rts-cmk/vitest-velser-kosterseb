@@ -6,10 +6,11 @@ export default defineConfig({
   plugins: [react()],
   test: {
     browser: {
-      enabled: true,
       provider: playwright(),
-      // https://vitest.dev/guide/browser/playwright
+      enabled: true,
+      // at least one instance is required
       instances: [
+        { browser: 'chromium' },
       ],
     },
   },
