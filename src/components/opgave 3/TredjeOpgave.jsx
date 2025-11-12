@@ -1,3 +1,13 @@
-// Øvelse 3: Test af asynkrone funktioner
-// Skriv tests for en funktion, der returnerer en Promise. 
-// Test både succes og fejltilfælde.
+import React, { useState } from 'react';
+
+export async function fetchData(type) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (type === 'success') {
+                resolve({ message: 'Data fetched successfully' });
+            } else {
+                reject(new Error('Failed to fetch data'));
+            }
+        }, 2000);
+    });
+}
