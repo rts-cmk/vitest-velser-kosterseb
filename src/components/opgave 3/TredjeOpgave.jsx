@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 export async function fetchData(type) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
